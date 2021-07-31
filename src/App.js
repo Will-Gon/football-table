@@ -1,6 +1,6 @@
 import Table from './components/Table';
 import './App.css';
-import * as ReactBootStrap from 'react-bootstrap';
+// import * as ReactBootStrap from 'react-bootstrap';
 
 const App = () => {
   const players = [
@@ -14,21 +14,11 @@ const App = () => {
         <td>{player.touchdowns}</td>
       </tr>
     );
-  }
+  };
+
   return (
     <div className="App">
-      <ReactBootStrap.Table striped bordered hover>
-  <thead>
-    <tr>
-      <th>Touchdowns</th>
-      <th>Catches</th>
-    </tr>
-  </thead>
-  <tbody>
-    {players.map(renderTable)}
-  </tbody>
-</ReactBootStrap.Table>
-      {/* <Table /> */}
+      <Table players={players} rows={renderTable}/>
     </div>
   );
 };

@@ -8,8 +8,9 @@ const Table = (props) => {
           <ReactBootStrap.Table striped bordered hover>
         <thead>
           <tr>
-            <th>Touchdowns</th>
             <th>Catches</th>
+            <th>Yards</th>
+            <th>Touchdowns</th>
           </tr>
         </thead>
         <tbody>

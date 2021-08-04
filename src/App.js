@@ -4,13 +4,14 @@ import './App.css';
 
 const App = () => {
   const players = [
-    {catches: "", touchdowns: ""}
+    {catches: 8, touchdowns: 2, yards: 50}
   ]
 
   const renderTable = (player, index) => {
     return (
       <tr key={index}>
         <td>{player.catches}</td>
+        <td>{player.yards}</td>
         <td>{player.touchdowns}</td>
       </tr>
     );
